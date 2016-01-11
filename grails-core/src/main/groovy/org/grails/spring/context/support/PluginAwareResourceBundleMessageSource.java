@@ -97,7 +97,7 @@ public class PluginAwareResourceBundleMessageSource extends ReloadableResourceBu
             String filename = resource.getFilename();
             String baseName = GrailsStringUtils.getFileBasename(filename);
             int i = baseName.indexOf('_');
-            if(i > -1) {
+            if(i > 0) {
                 baseName = baseName.substring(0, i);
             }
             if(!basenames.contains(baseName))
